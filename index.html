@@ -23,6 +23,16 @@
 </head>
 
 <body>
+  <a
+          class="link"
+          id="toggle-dark-mode"
+          title="Toggle Dark mode"
+          onclick="toggleDarkMode()"
+  >
+    <i class="fa fa-moon"></i>
+    <i class="fa fa-sun"></i>
+  </a>
+
   <div class="container">
     <div class="main-content">
       <div class="profile-photo">
@@ -100,6 +110,13 @@
           src="https://kit.fontawesome.com/b9809ccdd7.js"
           crossorigin="anonymous"
   ></script>
+  <script src="index.js"></script>
+  <script>
+    var darkMode = getCookie('dark-mode')
+    if (darkMode && darkMode.length) {
+      document.getElementById('html').className = 'dark'
+    }
+  </script>
 </body>
 
 </html>
