@@ -7,6 +7,11 @@ html {
   line-height: 1.4;
 }
 
+html.dark {
+  color: #ddd;
+  background-color: #333;
+}
+
 html,
 body,
 .container {
@@ -17,8 +22,26 @@ a {
   color: #555;
 }
 
+html.dark a {
+  color: #ddd;
+}
+
 h1 {
   font-family: "Courier New", Courier, monospace;
+}
+
+#toggle-dark-mode {
+  position: absolute;
+  right: 2%;
+  top: 2%;
+}
+
+html:not(.dark) #toggle-dark-mode .fa-sun {
+  display: none;
+}
+
+html.dark #toggle-dark-mode .fa-moon {
+  display: none;
 }
 
 .container {
