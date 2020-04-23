@@ -7,23 +7,36 @@ html {
   line-height: 1.4;
 }
 
-a {
-  color: #555;
+html,
+body,
+.container {
+  height: 95%;
 }
 
-body {
-  padding-top: 40px;
-  margin-left: 40px;
-  margin-right: 40px;
+a {
+  color: #555;
 }
 
 h1 {
   font-family: "Courier New", Courier, monospace;
 }
 
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contacts {
+  margin-top: 2em;
+}
+
+.separator {
+  margin: 1.5em 0;
+}
+
 .code {
   margin: 0;
-  white-space: pre;
   line-height: 0.7;
   letter-spacing: 0px;
   font: 14px monospace;
@@ -53,31 +66,11 @@ h1 {
   margin: 0 auto;
 }
 
-.qrcode {
-  margin-bottom: 3em;
-}
-
-@media (max-width: 700px) {
-  .widescreen {
-    display: none !important;
-  }
-}
-
-@media (min-width: 700px) {
-  .smallscreen {
-    display: none;
-  }
-}
-
 #cursor {
   opacity: 1;
   -webkit-animation: blink 1s infinite;
   -moz-animation: blink 1s infinite;
   animation: blink 1s infinite;
-}
-
-#pkmn-go-teamless {
-  fill: #555;
 }
 
 @keyframes blink {
