@@ -1,0 +1,48 @@
+@import "palette.css";
+
+html {
+  background-color: var(--black-025);
+  font-size: 16px;
+  font-family: 'Inconsolata', monospace;
+  text-align: center;
+  color: var(--black-750);
+  line-height: 1.4;
+}
+
+a {
+  color: var(--black-700);
+}
+
+h1 {
+  font-family: "Courier New", Courier, monospace;
+}
+
+.separator {
+  margin: 1.5em 0;
+}
+
+.code {
+  margin: 0;
+  line-height: 0.7;
+  letter-spacing: 0px;
+  font: 14px monospace;
+}
+
+.link {
+  cursor: pointer;
+}
+
+.profile-photo img {
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  background-clip: padding-box;
+  border: 5px solid var(--black-700);
+  -moz-box-shadow: var(--bs-md);
+  -webkit-box-shadow: var(--bs-md);
+  box-shadow: var(--bs-md);
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin: 0 auto;
+}
