@@ -66,9 +66,9 @@ h1 {
   border-radius: 100%;
   background-clip: padding-box;
   border: 5px solid var(--black-700);
-  -moz-box-shadow: var(--bs-md);
-  -webkit-box-shadow: var(--bs-md);
-  box-shadow: var(--bs-md);
+  -moz-box-shadow: var(--bs-sm);
+  -webkit-box-shadow: var(--bs-sm);
+  box-shadow: var(--bs-sm);
   width: 100px;
   height: 100px;
   display: block;
