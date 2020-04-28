@@ -127,7 +127,7 @@
   <script src="index.js"></script>
   <script>
     var theme = getCookie('theme')
-    document.getElementById('html').className = theme && theme.length ? 'night' : 'day'
+    document.getElementById('html').className = theme && theme.length ? theme : 'night'
   </script>
 </body>
 

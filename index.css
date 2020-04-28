@@ -12,7 +12,7 @@ body,
   top: 2%;
 }
 
-html:not(.night) #toggle-theme .fa-sun {
+html.day #toggle-theme .fa-sun {
   display: none;
 }
 
