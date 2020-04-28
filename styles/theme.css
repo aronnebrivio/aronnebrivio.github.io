@@ -1,7 +1,7 @@
 @import "palette.css";
 
 html {
-  background-color: var(--black-025);
+  background-color: var(--white);
   font-size: 16px;
   font-family: 'Inconsolata', monospace;
   text-align: center;
@@ -11,10 +11,38 @@ html {
 
 a {
   color: var(--black-700);
+  cursor: pointer;
 }
 
 h1 {
   font-family: "Courier New", Courier, monospace;
+}
+
+.nav-container {
+  background-color: var(--black-025);
+  width: 100%;
+  box-shadow: var(--bs-sm);
+  position: fixed;
+  left: 0px;
+  top: 0px;
+}
+
+.nav-container > nav {
+  text-align: center;
+  width: 50%;
+  max-width: 600px;
+  margin: 0px auto;
+}
+
+.nav-container > nav > ul {
+  list-style: none;
+  padding: 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-container > nav > ul > li {
+  display: inline-block;
 }
 
 .separator {
