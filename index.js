@@ -17,14 +17,14 @@ function getCookie(name) {
   }
 }
 
-function toggleDarkMode() {
+function toggleTheme() {
   var html = document.getElementById('html')
   if (!hasClass(html, 'night')) {
     html.className = 'night'
-    setCookie('dark-mode', true, 999999)
+    setCookie('theme', true, 999999)
   } else {
     html.className = 'day'
-    setCookie('dark-mode', '', 999999)
+    setCookie('theme', '', 999999)
   }
 }
 
