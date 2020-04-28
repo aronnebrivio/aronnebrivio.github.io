@@ -25,9 +25,9 @@
 <body>
   <a
           class="link"
-          id="toggle-dark-mode"
-          title="Toggle Dark mode"
-          onclick="toggleDarkMode()"
+          id="toggle-theme"
+          title="Toggle Day/Night theme"
+          onclick="toggleTheme()"
   >
     <i class="fa fa-moon"></i>
     <i class="fa fa-sun"></i>
@@ -126,8 +126,8 @@
   ></script>
   <script src="index.js"></script>
   <script>
-    var darkMode = getCookie('dark-mode')
-    document.getElementById('html').className = darkMode && darkMode.length ? 'night' : 'day'
+    var theme = getCookie('theme')
+    document.getElementById('html').className = theme && theme.length ? 'night' : 'day'
   </script>
 </body>
 

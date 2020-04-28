@@ -6,17 +6,17 @@ body,
   height: 99%;
 }
 
-#toggle-dark-mode {
+#toggle-theme {
   position: absolute;
   right: 2%;
   top: 2%;
 }
 
-html:not(.night) #toggle-dark-mode .fa-sun {
+html:not(.night) #toggle-theme .fa-sun {
   display: none;
 }
 
-html.night #toggle-dark-mode .fa-moon {
+html.night #toggle-theme .fa-moon {
   display: none;
 }
 
