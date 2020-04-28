@@ -23,17 +23,38 @@
 </head>
 
 <body>
-  <a
-          class="link"
-          id="toggle-dark-mode"
-          title="Toggle Dark mode"
-          onclick="toggleDarkMode()"
-  >
-    <i class="fa fa-moon"></i>
-    <i class="fa fa-sun"></i>
-  </a>
+  <div class="nav-container">
+    <nav>
+      <ul>
+        <li>
+          <a data-scroll-nav="0">~/aronne</a>
+        </li>
+        <li>
+          <a data-scroll-nav="1">projects</a>
+        </li>
+        <li>
+          <a data-scroll-nav="2">experience</a>
+        </li>
+        <li>
+          <a data-scroll-nav="3">education</a>
+        </li>
+      </ul>
+    </nav>
+    <a
+            class="link"
+            id="toggle-dark-mode"
+            title="Toggle Dark mode"
+            onclick="toggleDarkMode()"
+    >
+      <i class="fa fa-moon"></i>
+      <i class="fa fa-sun"></i>
+    </a>
+  </div>
 
-  <div class="container">
+  <div
+          class="container"
+          data-scroll-index="0"
+  >
     <div class="main-content">
       <div class="profile-photo">
         <img src="profile.jpg" />
@@ -120,14 +141,40 @@
     </div>
   </div>
 
+  <div
+          class="container"
+          data-scroll-index="1"
+  >Projects</div>
+
+  <div
+          class="container"
+          data-scroll-index="2"
+  >Experience</div>
+
+  <div
+          class="container"
+          data-scroll-index="3"
+  >Education</div>
+
   <script
           src="https://kit.fontawesome.com/b9809ccdd7.js"
           crossorigin="anonymous"
   ></script>
+  <script
+          src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"
+          integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+          crossorigin="anonymous"
+  ></script>
+  <script src="https://d1ml0gfpm9yj9s.cloudfront.net/scrollIt.min.js"></script>
   <script src="index.js"></script>
+
   <script>
     var darkMode = getCookie('dark-mode')
     document.getElementById('html').className = darkMode && darkMode.length ? 'night' : 'day'
+
+    $(function() {
+      $.scrollIt();
+    });
   </script>
 </body>
 
