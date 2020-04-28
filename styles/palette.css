@@ -1,4 +1,6 @@
-html.day {
+/* thanks to https://stackoverflow.com */
+
+body.day {
   --white: #fff;
   --black: #0c0d0e;
   --orange: #f48024;
@@ -91,7 +93,7 @@ html.day {
   --bs-lg: 0 1px 4px rgba(0, 0, 0, 0.09), 0 3px 8px rgba(0, 0, 0, 0.09), 0 4px 13px rgba(0, 0, 0, 0.13);
 }
 
-html.night {
+body.night {
   --white: #2d2d2d;
   --black: #fff;
   --black-025: #393939;

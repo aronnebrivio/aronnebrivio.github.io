@@ -1,28 +1,29 @@
 <!DOCTYPE html>
-<html id="html">
+<html>
 
 <head>
   <meta
           name=viewport
           content="width=device-width, initial-scale=1"
   >
-  <title> ~/aronnebrivio </title>
+  <title>~/aronnebrivio</title>
   <link
+          href="./favicon.png"
           rel="icon"
           type="image/png"
-          href="./favicon.png"
   >
   <link
           href="https://fonts.googleapis.com/css?family=Inconsolata"
           rel="stylesheet"
   >
   <link
-          rel="stylesheet"
           href="index.css"
+          rel="stylesheet"
   >
 </head>
 
-<body>
+<body id="body">
+  <!-- NAVBAR -->
   <div class="nav-container">
     <nav>
       <ul>
@@ -40,8 +41,8 @@
         </li>
       </ul>
     </nav>
+
     <a
-            class="link"
             id="toggle-theme"
             title="Toggle Day/Night theme"
             onclick="toggleTheme()"
@@ -51,6 +52,8 @@
     </a>
   </div>
 
+  <!-- SECTIONS -->
+  <!-- ~/aronne -->
   <div
           class="container"
           data-scroll-index="0"
@@ -141,21 +144,25 @@
     </div>
   </div>
 
+  <!-- projects -->
   <div
           class="container"
           data-scroll-index="1"
   >Projects</div>
 
+  <!-- experience -->
   <div
           class="container"
           data-scroll-index="2"
   >Experience</div>
 
+  <!-- education -->
   <div
           class="container"
           data-scroll-index="3"
   >Education</div>
 
+  <!-- JS -->
   <script
           src="https://kit.fontawesome.com/b9809ccdd7.js"
           crossorigin="anonymous"
@@ -170,7 +177,7 @@
 
   <script>
     var theme = getCookie('theme')
-    document.getElementById('html').className = theme && theme.length ? theme : 'night'
+    document.getElementById('body').className = theme && theme.length ? theme : 'night'
 
     $(function() {
       $.scrollIt();

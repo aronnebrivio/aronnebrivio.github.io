@@ -12,11 +12,11 @@ body,
   top: 30%;
 }
 
-html.day #toggle-theme .fa-sun {
+body.day #toggle-theme .fa-sun {
   display: none;
 }
 
-html.night #toggle-theme .fa-moon {
+body.night #toggle-theme .fa-moon {
   display: none;
 }
 

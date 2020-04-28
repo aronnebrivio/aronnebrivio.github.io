@@ -18,12 +18,12 @@ function getCookie(name) {
 }
 
 function toggleTheme() {
-  var html = document.getElementById('html')
-  if (!hasClass(html, 'night')) {
-    html.className = 'night'
+  var body = document.getElementById('body')
+  if (!hasClass(body, 'night')) {
+    body.className = 'night'
     setCookie('theme', true, 999999)
   } else {
-    html.className = 'day'
+    body.className = 'day'
     setCookie('theme', '', 999999)
   }
 }
