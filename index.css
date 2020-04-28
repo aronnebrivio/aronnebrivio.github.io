@@ -1,15 +1,12 @@
+@import "theme.css";
+
 html {
-  background-color: #FFF;
+  background-color: var(--black-025);
   font-size: 16px;
   font-family: 'Inconsolata', monospace;
   text-align: center;
-  color: #555;
+  color: var(--black-700);
   line-height: 1.4;
-}
-
-html.dark {
-  color: #ddd;
-  background-color: #333;
 }
 
 html,
@@ -19,11 +16,7 @@ body,
 }
 
 a {
-  color: #555;
-}
-
-html.dark a {
-  color: #ddd;
+  color: var(--black-700);
 }
 
 h1 {
@@ -36,11 +29,11 @@ h1 {
   top: 2%;
 }
 
-html:not(.dark) #toggle-dark-mode .fa-sun {
+html:not(.night) #toggle-dark-mode .fa-sun {
   display: none;
 }
 
-html.dark #toggle-dark-mode .fa-moon {
+html.night #toggle-dark-mode .fa-moon {
   display: none;
 }
 
@@ -65,11 +58,6 @@ html.dark #toggle-dark-mode .fa-moon {
   font: 14px monospace;
 }
 
-.code a {
-  color: #333;
-  font: 14px;
-}
-
 .link {
   cursor: pointer;
 }
@@ -79,7 +67,7 @@ html.dark #toggle-dark-mode .fa-moon {
   -webkit-border-radius: 100%;
   border-radius: 100%;
   background-clip: padding-box;
-  border: 5px solid #ffffff;
+  border: 5px solid var(--black-700);
   -moz-box-shadow: 0px 0px 2px rgba(0, 2, 2, 0.2);
   -webkit-box-shadow: 0px 0px 2px rgba(0, 2, 2, 0.2);
   box-shadow: 0px 0px 2px rgba(0, 2, 2, 0.2);

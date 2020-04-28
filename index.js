@@ -19,11 +19,11 @@ function getCookie(name) {
 
 function toggleDarkMode() {
   var html = document.getElementById('html')
-  if (!hasClass(html, 'dark')) {
-    html.className = 'dark'
+  if (!hasClass(html, 'night')) {
+    html.className = 'night'
     setCookie('dark-mode', true, 999999)
   } else {
-    html.className = ''
+    html.className = 'day'
     setCookie('dark-mode', '', 999999)
   }
 }

@@ -127,9 +127,7 @@
   <script src="index.js"></script>
   <script>
     var darkMode = getCookie('dark-mode')
-    if (darkMode && darkMode.length) {
-      document.getElementById('html').className = 'dark'
-    }
+    document.getElementById('html').className = darkMode && darkMode.length ? 'night' : 'day'
   </script>
 </body>
 
