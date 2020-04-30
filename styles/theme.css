@@ -33,6 +33,7 @@ section {
   position: fixed;
   left: 0px;
   top: 0px;
+  z-index: 999;
 }
 
 .nav-container > nav {
@@ -117,4 +118,46 @@ section {
   margin-top: 90px;
   width: 80%;
   max-width: 600px;
+}
+
+/* TIMELINE */
+.timeline-item {
+  padding: 3em 2em 2em;
+  position: relative;
+  border-left: 2px solid var(--black-500);
+  text-align: left;
+}
+
+.timeline-item::before {
+  content: attr(date-is);
+  position: absolute;
+  left: 2em;
+  color: var(--black-500);
+  top: 1.15em;
+  display: block;
+  font-size: .785rem;
+}
+
+.timeline-item::after {
+  width: 7px;
+  height: 7px;
+  display: block;
+  top: 1.15em;
+  position: absolute;
+  left: -6.05px;
+  border-radius: 7px;
+  content: '';
+  border: 2px solid var(--black-500);
+  background: var(--black-500);
+}
+
+.timeline-item:last-child {
+  border-image: linear-gradient(to bottom,
+      var(--black-500),
+      var(--black-500) 60%,
+      var(--white)) 1 100%;
+}
+
+.timeline-item h3 {
+  margin-top: 0px;
 }
