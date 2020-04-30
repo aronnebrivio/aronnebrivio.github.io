@@ -1,14 +1,8 @@
 @import "styles/theme.css";
 
-html,
-body,
-.container {
-  height: 99%;
-}
-
 #toggle-theme {
   position: absolute;
-  right: 1%;
+  right: 3%;
   top: 30%;
 }
 
@@ -20,10 +14,8 @@ body.night #toggle-theme .fa-moon {
   display: none;
 }
 
-.container {
-  display: flex;
+section:first-of-type {
   align-items: center;
-  justify-content: center;
 }
 
 .contacts {

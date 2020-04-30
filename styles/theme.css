@@ -19,6 +19,12 @@ h1 {
   font-family: "Courier New", Courier, monospace;
 }
 
+section {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
 /* navbar */
 .nav-container {
   background-color: var(--black-025);
@@ -31,7 +37,7 @@ h1 {
 
 .nav-container > nav {
   text-align: center;
-  width: 50%;
+  width: 80%;
   max-width: 600px;
   margin: 0px auto;
 }
@@ -72,4 +78,38 @@ h1 {
   height: 100px;
   display: block;
   margin: 0 auto;
+}
+
+.grid-layout {
+  display: grid;
+  grid-gap: 12px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+.card {
+  padding: 12px;
+  border: 1px solid var(--black-100);
+  border-radius: 3px;
+  background-color: var(--white);
+  -moz-box-shadow: var(--bs-sm);
+  -webkit-box-shadow: var(--bs-sm);
+  box-shadow: var(--bs-sm);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card .description {
+  text-align: left;
+}
+
+.card .title {
+  margin-top: 0px;
+  text-align: center;
+}
+
+.container {
+  margin-top: 90px;
+  width: 80%;
+  max-width: 600px;
 }
