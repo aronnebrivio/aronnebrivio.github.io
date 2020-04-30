@@ -161,3 +161,21 @@ section {
 .timeline-item h3 {
   margin-top: 0px;
 }
+
+/* tag */
+.tag {
+  color: var(--powder-700);
+  background-color: var(--powder-100);
+  border-color: transparent;
+  display: inline-block;
+  padding: .4em .5em;
+  margin: 2px 2px 2px 0;
+  font-size: 12px;
+  line-height: 1;
+  white-space: nowrap;
+  text-decoration: none;
+  text-align: center;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 3px;
+}
