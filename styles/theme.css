@@ -139,13 +139,13 @@ section {
 }
 
 .timeline-item::after {
-  width: 7px;
-  height: 7px;
+  width: 6px;
+  height: 6px;
   display: block;
   top: 1.15em;
   position: absolute;
-  left: -6.05px;
-  border-radius: 7px;
+  left: -6px;
+  border-radius: 6px;
   content: '';
   border: 2px solid var(--black-500);
   background: var(--black-500);
