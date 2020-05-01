@@ -33,6 +33,7 @@ section {
   position: fixed;
   left: 0px;
   top: 0px;
+  z-index: 999;
 }
 
 .nav-container > nav {
@@ -51,6 +52,11 @@ section {
 
 .nav-container > nav > ul > li {
   display: inline-block;
+}
+
+.nav-container > nav > ul > li > a.active {
+  border-bottom: solid 2px var(--black-500);
+  padding-bottom: 6px;
 }
 
 /* classes */
@@ -109,7 +115,67 @@ section {
 }
 
 .container {
-  margin-top: 90px;
+  padding-top: 90px;
   width: 80%;
   max-width: 600px;
+}
+
+/* TIMELINE */
+.timeline-item {
+  padding: 3em 2em 2em;
+  position: relative;
+  border-left: 2px solid var(--black-500);
+  text-align: left;
+}
+
+.timeline-item::before {
+  content: attr(date-is);
+  position: absolute;
+  left: 2em;
+  color: var(--black-500);
+  top: 1.15em;
+  display: block;
+  font-size: .785rem;
+}
+
+.timeline-item::after {
+  width: 6px;
+  height: 6px;
+  display: block;
+  top: 1.15em;
+  position: absolute;
+  left: -6px;
+  border-radius: 6px;
+  content: '';
+  border: 2px solid var(--black-500);
+  background: var(--black-500);
+}
+
+.timeline-item:last-child {
+  border-image: linear-gradient(to bottom,
+      var(--black-500),
+      var(--black-500) 60%,
+      var(--white)) 1 100%;
+}
+
+.timeline-item h3 {
+  margin-top: 0px;
+}
+
+/* tag */
+.tag {
+  color: var(--powder-700);
+  background-color: var(--powder-100);
+  border-color: transparent;
+  display: inline-block;
+  padding: .4em .5em;
+  margin: 2px 2px 2px 0;
+  font-size: 12px;
+  line-height: 1;
+  white-space: nowrap;
+  text-decoration: none;
+  text-align: center;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 3px;
 }
