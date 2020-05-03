@@ -1,0 +1,19 @@
+{
+  "name": "aronnebrivio.github.io",
+  "version": "1.0.0",
+  "description": "Personal frontpage",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aronnebrivio/aronnebrivio.github.io.git"
+  },
+  "author": "Aronne Brivio",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aronnebrivio/aronnebrivio.github.io/issues"
+  },
+  "homepage": "https://github.com/aronnebrivio/aronnebrivio.github.io#readme"
+}
