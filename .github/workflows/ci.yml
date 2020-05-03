@@ -15,4 +15,5 @@ jobs:
         with:
           access-token: ${{ secrets.ACCESS_TOKEN }}
           source-directory: dist
-          build-command: npm install && npm run build
+          build-command: "npm run build"
+          deploy-branch: master
