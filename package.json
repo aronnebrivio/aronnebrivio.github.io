@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/aronnebrivio/aronnebrivio.github.io/issues"
   },
-  "homepage": "https://github.com/aronnebrivio/aronnebrivio.github.io#readme"
+  "homepage": "https://github.com/aronnebrivio/aronnebrivio.github.io#readme",
+  "dependencies": {
+    "cssnano": "^4.1.10",
+    "html-minifier": "^4.0.0",
+    "uglify-js": "^3.9.2"
+  }
 }
