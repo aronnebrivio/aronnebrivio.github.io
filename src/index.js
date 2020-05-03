@@ -1,6 +1,6 @@
-const THEME_DARK = 'night'
-const THEME_LIGHT = 'day'
-const THEMES = [
+var THEME_DARK = 'night'
+var THEME_LIGHT = 'day'
+var THEMES = [
   THEME_LIGHT,
   THEME_DARK,
 ]
