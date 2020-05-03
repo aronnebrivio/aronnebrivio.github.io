@@ -4,7 +4,7 @@
   "description": "Personal frontpage",
   "main": "src/index.html",
   "scripts": {
-    "build": "npm install && ./build.sh"
+    "build": "./build.sh"
   },
   "repository": {
     "type": "git",

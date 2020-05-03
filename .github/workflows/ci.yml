@@ -6,14 +6,22 @@ on:
       - master
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
-
     steps:
-      - uses: actions/checkout@v2
-      - uses: sterlingwes/gh-pages-deploy-action@v1.1
+      - name: Checkout 🛎️
+        uses: actions/checkout@v2
         with:
-          access-token: ${{ secrets.ACCESS_TOKEN }}
-          source-directory: dist
-          build-command: npm run build
-          deploy-branch: master
+          persist-credentials: false
+
+      - name: Install and Build 🔧
+        run: |
+          npm install
+          npm run build
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@releases/v3
+        with:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          BRANCH: master
+          FOLDER: dist
