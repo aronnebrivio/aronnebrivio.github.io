@@ -59,7 +59,12 @@ section {
 }
 
 .nav-container > nav > ul > li > a.active {
-  border-bottom: solid 2px var(--black-500);
+  border-bottom: solid 2px var(--black-500) !important;
+  padding-bottom: 6px;
+}
+
+.nav-container > nav > ul > li > a:hover {
+  border-bottom: solid 2px var(--black-100);
   padding-bottom: 6px;
 }
 
