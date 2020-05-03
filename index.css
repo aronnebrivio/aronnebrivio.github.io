@@ -1,92 +1,25 @@
-html {
-  background-color: #FFF;
-  font-size: 16px;
-  font-family: 'Inconsolata', monospace;
-  text-align: center;
-  color: #555;
-  line-height: 1.4;
-}
+@import "styles/theme.css";
 
-html.dark {
-  color: #ddd;
-  background-color: #333;
-}
-
-html,
-body,
-.container {
-  height: 99%;
-}
-
-a {
-  color: #555;
-}
-
-html.dark a {
-  color: #ddd;
-}
-
-h1 {
-  font-family: "Courier New", Courier, monospace;
-}
-
-#toggle-dark-mode {
+#toggle-theme {
   position: absolute;
-  right: 2%;
-  top: 2%;
+  right: 3%;
+  top: 30%;
 }
 
-html:not(.dark) #toggle-dark-mode .fa-sun {
+body.day #toggle-theme .fa-sun {
   display: none;
 }
 
-html.dark #toggle-dark-mode .fa-moon {
+body.night #toggle-theme .fa-moon {
   display: none;
 }
 
-.container {
-  display: flex;
+section:first-of-type {
   align-items: center;
-  justify-content: center;
 }
 
 .contacts {
   margin-top: 2em;
-}
-
-.separator {
-  margin: 1.5em 0;
-}
-
-.code {
-  margin: 0;
-  line-height: 0.7;
-  letter-spacing: 0px;
-  font: 14px monospace;
-}
-
-.code a {
-  color: #333;
-  font: 14px;
-}
-
-.link {
-  cursor: pointer;
-}
-
-.profile-photo img {
-  -moz-border-radius: 100%;
-  -webkit-border-radius: 100%;
-  border-radius: 100%;
-  background-clip: padding-box;
-  border: 5px solid #ffffff;
-  -moz-box-shadow: 0px 0px 2px rgba(0, 2, 2, 0.2);
-  -webkit-box-shadow: 0px 0px 2px rgba(0, 2, 2, 0.2);
-  box-shadow: 0px 0px 2px rgba(0, 2, 2, 0.2);
-  width: 100px;
-  height: 100px;
-  display: block;
-  margin: 0 auto;
 }
 
 #cursor {
