@@ -42,3 +42,11 @@ function hasClass(element, className) {
 function isThemeValid(theme) {
   return theme && theme.length && THEMES.includes(theme)
 }
+
+/* MAIN */
+var theme = getCookie('theme')
+document.getElementById('body').className = isThemeValid(theme) ? theme : THEME_DARK
+
+$(function() {
+  $.scrollIt();
+});
