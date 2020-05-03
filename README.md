@@ -2,7 +2,7 @@
 
 Personal frontpage
 
-![](https://github.com/actions/hello-world/workflows/Greet%20Everyone/badge.svg)
+![](https://github.com/aronnebrivio/aronnebrivio.github.io/workflows/Publish%20on%20Github%20Pages/badge.svg?branch=production)
 
 **IMPORTANT NOTE:**    
 Due to a GitHub Pages limitation that *does not allow you to select a different branch for the deployment of user pages*, I configured `production` as the "master" branch in [git-flow](https://nvie.com/posts/a-successful-git-branching-model/).    
