@@ -29,18 +29,31 @@
       <ul>
         <li>
           <a
-                  data-scroll-nav="0"
-                  class="active"
+                  class="nav-item"
+                  id="nav-home"
+                  onclick="navigateTo('home')"
           >~/aronne</a>
         </li>
         <li>
-          <a data-scroll-nav="1">projects</a>
+          <a
+                  class="nav-item"
+                  id="nav-projects"
+                  onclick="navigateTo('projects')"
+          >projects</a>
         </li>
         <li>
-          <a data-scroll-nav="2">experience</a>
+          <a
+                  class="nav-item"
+                  id="nav-experience"
+                  onclick="navigateTo('experience')"
+          >experience</a>
         </li>
         <li>
-          <a data-scroll-nav="3">education</a>
+          <a
+                  class="nav-item"
+                  id="nav-education"
+                  onclick="navigateTo('education')"
+          >education</a>
         </li>
       </ul>
     </nav>
@@ -59,7 +72,7 @@
   <!-- ~/aronne -->
   <section
           class="section"
-          data-scroll-index="0"
+          id="home"
   >
     <div class="main-content">
       <div class="profile-photo">
@@ -76,8 +89,8 @@
         <p class="separator">- - -</p>
         <p class="projects">
           <a
-                  data-scroll-goto="1"
-                  style="text-decoration: underline"
+                  onclick="navigateTo('projects')"
+                  style="text-decoration: underline;"
           >Projects</a>
         </p>
       </div>
@@ -150,7 +163,7 @@
   <!-- projects -->
   <section
           class="section"
-          data-scroll-index="1"
+          id="projects"
   >
     <div class="container">
       <h1>Projects</h1>
@@ -232,7 +245,7 @@
   <!-- experience -->
   <section
           class="section"
-          data-scroll-index="2"
+          id="experience"
   >
     <div class="container">
       <h1>Experience</h1>
@@ -345,7 +358,7 @@
   <!-- education -->
   <section
           class="section"
-          data-scroll-index="3"
+          id="education"
   >
     <div class="container education">
       <h1>Education</h1>
@@ -383,12 +396,7 @@
           src="https://kit.fontawesome.com/b9809ccdd7.js"
           crossorigin="anonymous"
   ></script>
-  <script
-          src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"
-          integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
-          crossorigin="anonymous"
-  ></script>
-  <script src="https://d1ml0gfpm9yj9s.cloudfront.net/scrollIt.min.js"></script>
+  <script src="zenscroll-min.js"></script>
   <script src="index.js"></script>
 </body>
 

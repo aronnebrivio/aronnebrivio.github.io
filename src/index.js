@@ -43,10 +43,20 @@ function isThemeValid(theme) {
   return theme && theme.length && THEMES.includes(theme)
 }
 
+function navigateTo(id) {
+  var element = document.getElementById(id)
+  zenscroll.to(element)
+
+  var navItems = document.querySelectorAll('.nav-item');
+  [].forEach.call(navItems, function(item) {
+    item.className = item.className.replace(/\bactive\b/, '');
+  });
+
+  var currentNavElement = document.getElementById('nav-' + id);
+  currentNavElement.className += ' active';
+}
+
 /* MAIN */
 var theme = getCookie('theme')
 document.getElementById('body').className = isThemeValid(theme) ? theme : THEME_DARK
-
-$(function() {
-  $.scrollIt();
-});
+navigateTo('home')
