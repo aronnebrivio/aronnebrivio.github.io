@@ -1,5 +1,9 @@
 const THEME_DARK = 'night'
 const THEME_LIGHT = 'day'
+const THEMES = [
+  THEME_LIGHT,
+  THEME_DARK,
+]
 
 function setCookie(name, value, daysToLive) {
   var expirationDate = new Date()
@@ -33,4 +37,8 @@ function toggleTheme() {
 
 function hasClass(element, className) {
   return (' ' + element.className + ' ').indexOf(' ' + className + ' ') > -1
+}
+
+function isThemeValid(theme) {
+  return theme && theme.length && THEMES.includes(theme)
 }
