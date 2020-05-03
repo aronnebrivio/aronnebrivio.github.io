@@ -18,6 +18,7 @@
   "homepage": "https://github.com/aronnebrivio/aronnebrivio.github.io#readme",
   "dependencies": {
     "cssnano": "^4.1.10",
+    "cssnano-cli": "^1.0.5",
     "html-minifier": "^4.0.0",
     "uglify-js": "^3.9.2"
   }
