@@ -393,7 +393,7 @@
 
   <script>
     var theme = getCookie('theme')
-    document.getElementById('body').className = theme && theme.length ? theme : 'night'
+    document.getElementById('body').className = isThemeValid(theme) ? theme : THEME_DARK
 
     $(function() {
       $.scrollIt();

@@ -1,3 +1,10 @@
+const THEME_DARK = 'night'
+const THEME_LIGHT = 'day'
+const THEMES = [
+  THEME_LIGHT,
+  THEME_DARK,
+]
+
 function setCookie(name, value, daysToLive) {
   var expirationDate = new Date()
   expirationDate.setDate(expirationDate.getDate() + daysToLive)
@@ -19,15 +26,19 @@ function getCookie(name) {
 
 function toggleTheme() {
   var body = document.getElementById('body')
-  if (!hasClass(body, 'night')) {
-    body.className = 'night'
-    setCookie('theme', true, 999999)
+  if (!hasClass(body, THEME_DARK)) {
+    body.className = THEME_DARK
+    setCookie('theme', THEME_DARK, 999999)
   } else {
-    body.className = 'day'
-    setCookie('theme', '', 999999)
+    body.className = THEME_LIGHT
+    setCookie('theme', THEME_LIGHT, 999999)
   }
 }
 
 function hasClass(element, className) {
   return (' ' + element.className + ' ').indexOf(' ' + className + ' ') > -1
+}
+
+function isThemeValid(theme) {
+  return theme && theme.length && THEMES.includes(theme)
 }
