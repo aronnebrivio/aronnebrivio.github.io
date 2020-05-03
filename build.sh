@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "Cleaning up"
+echo "Cleaning up..."
 rm -rf dist/
 mkdir dist
 mkdir dist/styles
@@ -8,6 +8,8 @@ mkdir dist/styles
 MAIN_FILE_NAME="index"
 PALETTE="styles/palette.css"
 THEME="styles/theme.css"
+FAVICON="favicon.png"
+PROFILE="profile.jpg"
 
 echo "Building..."
 ./node_modules/.bin/html-minifier --collapse-whitespace $MAIN_FILE_NAME.html -o dist/$MAIN_FILE_NAME.html
@@ -15,5 +17,7 @@ echo "Building..."
 ./node_modules/.bin/cssnano $PALETTE dist/$PALETTE
 ./node_modules/.bin/cssnano $THEME dist/$THEME
 ./node_modules/.bin/cssnano $MAIN_FILE_NAME.css dist/$MAIN_FILE_NAME.css
+cp $FAVICON dist/$FAVICON
+cp $PROFILE dist/$PROFILE
 
 echo "Build complete!"
