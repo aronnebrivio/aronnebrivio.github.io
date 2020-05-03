@@ -8,6 +8,7 @@ THEME="styles/theme.css"
 FAVICON="favicon.png"
 PROFILE="profile.jpg"
 README="README.md"
+NOJEKYLL=".nojekyll"
 
 echo "Cleaning up..."
 rm -rf $DIST_FOLDER/
@@ -23,5 +24,6 @@ echo "Building..."
 cp $SRC_FOLDER/$FAVICON $DIST_FOLDER/$FAVICON
 cp $SRC_FOLDER/$PROFILE $DIST_FOLDER/$PROFILE
 cp $README $DIST_FOLDER/$README
+cp $NOJEKYLL $DIST_FOLDER/$NOJEKYLL
 
 echo "Build complete!"
