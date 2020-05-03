@@ -46,8 +46,17 @@ function isThemeValid(theme) {
 function navigateTo(id) {
   var element = document.getElementById(id)
   zenscroll.to(element)
+
+  var navItems = document.querySelectorAll('.nav-item');
+  [].forEach.call(navItems, function(item) {
+    item.className = item.className.replace(/\bactive\b/, '');
+  });
+
+  var currentNavElement = document.getElementById('nav-' + id);
+  currentNavElement.className += ' active';
 }
 
 /* MAIN */
 var theme = getCookie('theme')
 document.getElementById('body').className = isThemeValid(theme) ? theme : THEME_DARK
+navigateTo('home')
