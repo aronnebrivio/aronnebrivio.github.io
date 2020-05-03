@@ -54,6 +54,10 @@ section {
   display: inline-block;
 }
 
+.nav-container > nav > ul > li > a {
+  text-decoration: none;
+}
+
 .nav-container > nav > ul > li > a.active {
   border-bottom: solid 2px var(--black-500);
   padding-bottom: 6px;

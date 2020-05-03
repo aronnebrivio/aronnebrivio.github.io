@@ -43,10 +43,11 @@ function isThemeValid(theme) {
   return theme && theme.length && THEMES.includes(theme)
 }
 
+function navigateTo(id) {
+  var element = document.getElementById(id)
+  zenscroll.to(element)
+}
+
 /* MAIN */
 var theme = getCookie('theme')
 document.getElementById('body').className = isThemeValid(theme) ? theme : THEME_DARK
-
-$(function() {
-  $.scrollIt();
-});
