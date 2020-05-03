@@ -3,7 +3,7 @@
 #toggle-theme {
   position: absolute;
   right: 3%;
-  top: 30%;
+  top: 32%;
 }
 
 body.day #toggle-theme .fa-sun {
