@@ -3,7 +3,7 @@ name: Publish on Github Pages
 on:
   push:
     branches:
-      - master
+      - production
 
 jobs:
   build-and-deploy:
