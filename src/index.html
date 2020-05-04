@@ -2,6 +2,22 @@
 <html>
 
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=UA-165481841-1"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-165481841-1');
+  </script>
+
   <meta
           name=viewport
           content="width=device-width, initial-scale=1"
@@ -60,11 +76,10 @@
 
     <a
             id="toggle-theme"
-            title="Toggle Day/Night theme"
             onclick="toggleTheme()"
     >
-      <i class="fa fa-moon"></i>
-      <i class="fa fa-sun"></i>
+      <i class="far fa-lightbulb"></i>
+      <i class="fas fa-lightbulb"></i>
     </a>
   </div>
 
@@ -105,7 +120,7 @@
                 target="_blank"
         ><i
                   class="fab fa-linkedin"
-                  title="Linkedin"
+                  title="LinkedIn"
           ></i></a>
         <a
                 href="https://github.com/aronnebrivio"
@@ -148,13 +163,6 @@
         ><i
                   title="Keybase"
                   class="fab fa-keybase"
-          ></i></a>
-        <a
-                href="https://www.pokemongotoolkit.com"
-                target="_blank"
-        ><i
-                  title="Pokémon GO Toolkit"
-                  class="fa fa-globe-europe"
           ></i></a>
       </div>
     </div>
@@ -396,7 +404,7 @@
           src="https://kit.fontawesome.com/b9809ccdd7.js"
           crossorigin="anonymous"
   ></script>
-  <script src="zenscroll-min.js"></script>
+  <script src="scripts/zenscroll-min.js"></script>
   <script src="index.js"></script>
 </body>
 

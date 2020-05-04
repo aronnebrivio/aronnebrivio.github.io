@@ -26,13 +26,10 @@ function getCookie(name) {
 
 function toggleTheme() {
   var body = document.getElementById('body')
-  if (!hasClass(body, THEME_DARK)) {
-    body.className = THEME_DARK
-    setCookie('theme', THEME_DARK, 999999)
-  } else {
-    body.className = THEME_LIGHT
-    setCookie('theme', THEME_LIGHT, 999999)
-  }
+  var theme = !hasClass(body, THEME_DARK) ? THEME_DARK : THEME_LIGHT
+  body.className = theme
+  setCookie('theme', theme, 999999)
+  setToggleThemeTitle(theme)
 }
 
 function hasClass(element, className) {
@@ -49,14 +46,25 @@ function navigateTo(id) {
 
   var navItems = document.querySelectorAll('.nav-item');
   [].forEach.call(navItems, function(item) {
-    item.className = item.className.replace(/\bactive\b/, '');
-  });
+    item.className = item.className.replace(/\bactive\b/, '')
+  })
 
-  var currentNavElement = document.getElementById('nav-' + id);
-  currentNavElement.className += ' active';
+  var currentNavElement = document.getElementById('nav-' + id)
+  currentNavElement.className += ' active'
+}
+
+function setToggleThemeTitle(theme) {
+  var title = '"Alexa, turn the lights '
+  title += theme == THEME_DARK ? 'on"' : 'off"'
+
+  var toggle = document.getElementById('toggle-theme')
+  toggle.title = title
 }
 
 /* MAIN */
 var theme = getCookie('theme')
-document.getElementById('body').className = isThemeValid(theme) ? theme : THEME_DARK
+theme = isThemeValid(theme) ? theme : THEME_DARK
+document.getElementById('body').className = theme
+setToggleThemeTitle(theme)
+
 navigateTo('home')
