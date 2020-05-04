@@ -54,8 +54,8 @@ function navigateTo(id) {
 }
 
 function setToggleThemeTitle(theme) {
-  var title = 'Turn the lights '
-  title += theme == THEME_DARK ? 'on' : 'off'
+  var title = '"Alexa, turn the lights '
+  title += theme == THEME_DARK ? 'on"' : 'off"'
 
   var toggle = document.getElementById('toggle-theme')
   toggle.title = title
