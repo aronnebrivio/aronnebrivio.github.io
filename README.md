@@ -1,4 +1,6 @@
 # aronnebrivio.github.io
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Faronnebrivio%2Faronnebrivio.github.io.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Faronnebrivio%2Faronnebrivio.github.io?ref=badge_shield)
+
 
 Personal frontpage
 
@@ -22,3 +24,6 @@ To automate the GitHub Page deploy I'm using [JamesIves/github-pages-deploy-acti
 
 ## License
 Copyright (c) 2020 Aronne Brivio. Released under the MIT License. See [LICENSE](https://github.com/aronnebrivio/aronnebrivio.github.io/blob/master/LICENSE) for details.
+
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Faronnebrivio%2Faronnebrivio.github.io.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Faronnebrivio%2Faronnebrivio.github.io?ref=badge_large)
