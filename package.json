@@ -1,6 +1,6 @@
 {
   "name": "aronnebrivio.github.io",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Personal frontpage",
   "main": "src/index.html",
   "scripts": {
