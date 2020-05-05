@@ -1,8 +1,10 @@
 # aronnebrivio.github.io
-Personal frontpage
+Personal frontpage • 👉 [aronnebrivio.dev](https://aronnebrivio.dev)
 
 ![](https://github.com/aronnebrivio/aronnebrivio.github.io/workflows/Publish%20on%20Github%20Pages/badge.svg?branch=production)
+[![Dependency status](https://david-dm.org/aronnebrivio/aronnebrivio.github.io.svg)](https://david-dm.org/aronnebrivio/aronnebrivio.github.io)
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Faronnebrivio%2Faronnebrivio.github.io.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Faronnebrivio%2Faronnebrivio.github.io?ref=badge_shield)
+[![LICENSE](https://img.shields.io/badge/licese-MIT-gold.svg)](https://github.com/aronnebrivio/aronnebrivio.github.io/blob/master/LICENSE)
 
 **IMPORTANT NOTE:**    
 Due to a GitHub Pages limitation that *does not allow you to select a different branch for the deployment of user pages*, I configured `production` as the "master" branch in [git-flow](https://nvie.com/posts/a-successful-git-branching-model/) and as the "default" branch in GitHub repository settings.    
