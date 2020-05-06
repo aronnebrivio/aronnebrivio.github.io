@@ -74,10 +74,10 @@ function toggleMobileMenu() {
 
   if (hasClass(menu, 'opened')) {
     menu.className = ''
-    dimmer.className += ' hidden'
+    dimmer.className = 'hidden'
   } else {
     menu.className = 'opened'
-    dimmer.className = dimmer.className.replace(/\hidden\b/, '')
+    dimmer.className = ''
   }
 }
 

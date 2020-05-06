@@ -230,10 +230,10 @@ section {
   .nav-container > nav > ul > li {
     overflow: hidden;
     height: 0;
-    -webkit-transition: height 200ms ease-in;
-    -moz-transition: height 200ms ease-in;
-    -o-transition: height 200ms ease-in;
-    transition: height 200ms ease-in;
+    -webkit-transition: height 100ms ease-in;
+    -moz-transition: height 100ms ease-in;
+    -o-transition: height 100ms ease-in;
+    transition: height 100ms ease-in;
   }
 
   .nav-container > nav > ul.opened > li {
