@@ -51,14 +51,34 @@ function navigateTo(id) {
 
   var currentNavElement = document.getElementById('nav-' + id)
   currentNavElement.className += ' active'
+
+  var menu = document.getElementById('top-menu')
+  if (hasClass(menu, 'opened')) {
+    toggleMobileMenu()
+  }
 }
 
 function setToggleThemeTitle(theme) {
   var title = '"Alexa, turn the lights '
   title += theme == THEME_DARK ? 'on"' : 'off"'
 
-  var toggle = document.getElementById('toggle-theme')
+  var toggle = document.getElementById('theme-toggle')
+  var mobileToggle = document.getElementById('mobile-theme-toggle')
   toggle.title = title
+  mobileToggle.innerHTML = title
+}
+
+function toggleMobileMenu() {
+  var menu = document.getElementById('top-menu')
+  var dimmer = document.getElementById('screen-dimmer')
+
+  if (hasClass(menu, 'opened')) {
+    menu.className = ''
+    dimmer.className = 'hidden'
+  } else {
+    menu.className = 'opened'
+    dimmer.className = ''
+  }
 }
 
 /* MAIN */
