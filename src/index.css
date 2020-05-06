@@ -1,16 +1,28 @@
 @import "styles/theme.css";
 
-#toggle-theme {
+body {
+  scroll-behavior: smooth;
+}
+
+.hidden {
+  display: none !important;
+}
+
+#theme-toggle {
   position: absolute;
   right: 3%;
   top: 32%;
 }
 
-body.day #toggle-theme .fas.fa-lightbulb {
+#mobile-theme-toggle {
+  font-style: italic;
+}
+
+body.day #theme-toggle .fas.fa-lightbulb {
   display: none;
 }
 
-body.night #toggle-theme .far.fa-lightbulb {
+body.night #theme-toggle .far.fa-lightbulb {
   display: none;
 }
 
@@ -27,6 +39,21 @@ section:first-of-type {
   -webkit-animation: blink 1s infinite;
   -moz-animation: blink 1s infinite;
   animation: blink 1s infinite;
+}
+
+.profile-photo img {
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  background-clip: padding-box;
+  border: 5px solid var(--black-700);
+  -moz-box-shadow: var(--bs-sm);
+  -webkit-box-shadow: var(--bs-sm);
+  box-shadow: var(--bs-sm);
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin: 0 auto;
 }
 
 @keyframes blink {
