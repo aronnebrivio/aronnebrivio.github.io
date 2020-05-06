@@ -57,8 +57,8 @@ function setToggleThemeTitle(theme) {
   var title = '"Alexa, turn the lights '
   title += theme == THEME_DARK ? 'on"' : 'off"'
 
-  var toggle = document.getElementById('toggle-theme')
-  var mobileToggle = document.getElementById('mobile-toggle-theme')
+  var toggle = document.getElementById('theme-toggle')
+  var mobileToggle = document.getElementById('mobile-theme-toggle')
   toggle.title = title
   mobileToggle.innerHTML = title
 }

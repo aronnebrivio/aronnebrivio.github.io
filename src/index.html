@@ -41,7 +41,10 @@
 <body id="body">
   <!-- NAVBAR -->
   <div class="nav-container">
-    <div class="mobile mobile-nav-content">
+    <div
+            class="mobile"
+            id="mobile-nav-content"
+    >
       <a
               class="logo"
               onclick="navigateTo('home')"
@@ -79,15 +82,16 @@
           >education</a>
         </li>
         <li class="mobile">- - -</li>
-        <li class="mobile"><a
-                  id="mobile-toggle-theme"
+        <li class="mobile">
+          <a
+                  id="mobile-theme-toggle"
                   onclick="toggleTheme()"
           ></a>
         </li>
       </ul>
 
       <a
-              id="toggle-theme"
+              id="theme-toggle"
               class="no-mobile"
               onclick="toggleTheme()"
       >
