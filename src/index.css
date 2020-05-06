@@ -6,6 +6,10 @@
   top: 32%;
 }
 
+#mobile-toggle-theme {
+  font-style: italic;
+}
+
 body.day #toggle-theme .fas.fa-lightbulb {
   display: none;
 }

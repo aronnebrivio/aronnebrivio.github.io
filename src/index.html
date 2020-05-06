@@ -41,8 +41,15 @@
 <body id="body">
   <!-- NAVBAR -->
   <div class="nav-container">
+    <div class="mobile mobile-nav-content">
+      <a
+              class="logo"
+              onclick="navigateTo('home')"
+      >~/aronne</a>
+      <a onclick="toggleMobileMenu()"><i class="fa fa-bars"></i></a>
+    </div>
     <nav>
-      <ul>
+      <ul id="top-menu">
         <li>
           <a
                   class="nav-item"
@@ -71,16 +78,23 @@
                   onclick="navigateTo('education')"
           >education</a>
         </li>
+        <li class="mobile">- - -</li>
+        <li class="mobile"><a
+                  id="mobile-toggle-theme"
+                  onclick="toggleTheme()"
+          ></a>
+        </li>
       </ul>
-    </nav>
 
-    <a
-            id="toggle-theme"
-            onclick="toggleTheme()"
-    >
-      <i class="far fa-lightbulb"></i>
-      <i class="fas fa-lightbulb"></i>
-    </a>
+      <a
+              id="toggle-theme"
+              class="no-mobile"
+              onclick="toggleTheme()"
+      >
+        <i class="far fa-lightbulb"></i>
+        <i class="fas fa-lightbulb"></i>
+      </a>
+    </nav>
   </div>
 
   <!-- SECTIONS -->

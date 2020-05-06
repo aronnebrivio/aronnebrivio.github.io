@@ -58,7 +58,15 @@ function setToggleThemeTitle(theme) {
   title += theme == THEME_DARK ? 'on"' : 'off"'
 
   var toggle = document.getElementById('toggle-theme')
+  var mobileToggle = document.getElementById('mobile-toggle-theme')
   toggle.title = title
+  mobileToggle.innerHTML = title
+}
+
+function toggleMobileMenu() {
+  var menu = document.getElementById('top-menu')
+  var menuClass = hasClass(menu, 'opened') ? '' : 'opened'
+  menu.className = menuClass
 }
 
 /* MAIN */
