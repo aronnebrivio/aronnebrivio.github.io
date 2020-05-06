@@ -1,5 +1,9 @@
 @import "styles/theme.css";
 
+body {
+  scroll-behavior: smooth;
+}
+
 .hidden {
   display: none !important;
 }

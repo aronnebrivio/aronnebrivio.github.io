@@ -51,6 +51,11 @@ function navigateTo(id) {
 
   var currentNavElement = document.getElementById('nav-' + id)
   currentNavElement.className += ' active'
+
+  var menu = document.getElementById('top-menu')
+  if (hasClass(menu, 'opened')) {
+    toggleMobileMenu()
+  }
 }
 
 function setToggleThemeTitle(theme) {
@@ -69,10 +74,10 @@ function toggleMobileMenu() {
 
   if (hasClass(menu, 'opened')) {
     menu.className = ''
-    dimmer.className = 'hidden'
+    dimmer.className += ' hidden'
   } else {
     menu.className = 'opened'
-    dimmer.className = ''
+    dimmer.className = dimmer.className.replace(/\hidden\b/, '')
   }
 }
 

@@ -148,14 +148,7 @@ section {
 }
 
 #screen-dimmer {
-  display: block;
-  background: rgba(0, 0, 0, 0.5);
-  height: 100vh;
-  left: 0;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 998;
+  display: none;
 }
 
 /* navbar */
@@ -256,5 +249,16 @@ section {
     flex: 1;
     justify-content: space-between;
     padding: 0 16px;
+  }
+
+  #screen-dimmer {
+    display: block;
+    background: rgba(0, 0, 0, 0.5);
+    height: 100vh;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 998;
   }
 }
