@@ -65,8 +65,15 @@ function setToggleThemeTitle(theme) {
 
 function toggleMobileMenu() {
   var menu = document.getElementById('top-menu')
-  var menuClass = hasClass(menu, 'opened') ? '' : 'opened'
-  menu.className = menuClass
+  var dimmer = document.getElementById('screen-dimmer')
+
+  if (hasClass(menu, 'opened')) {
+    menu.className = ''
+    dimmer.className = 'hidden'
+  } else {
+    menu.className = 'opened'
+    dimmer.className = ''
+  }
 }
 
 /* MAIN */

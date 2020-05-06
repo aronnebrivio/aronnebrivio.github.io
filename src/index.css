@@ -1,5 +1,9 @@
 @import "styles/theme.css";
 
+.hidden {
+  display: none !important;
+}
+
 #theme-toggle {
   position: absolute;
   right: 3%;
