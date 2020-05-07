@@ -1,6 +1,8 @@
 @import "palette.css";
 
-/* base tags */
+/********/
+/* BASE */
+/********/
 body {
   background-color: var(--white);
   font-size: 16px;
@@ -25,7 +27,9 @@ section {
   min-height: 100vh;
 }
 
+/**************/
 /* COMPONENTS */
+/**************/
 .separator {
   margin: 1.5em 0;
 }
@@ -43,6 +47,7 @@ section {
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 }
 
+/* card */
 .card {
   padding: 12px;
   border: 1px solid var(--black-100);
@@ -155,6 +160,8 @@ section {
 .nav-container {
   background-color: var(--black-025);
   width: 100%;
+  -moz-box-shadow: var(--bs-sm);
+  -webkit-box-shadow: var(--bs-sm);
   box-shadow: var(--bs-sm);
   position: fixed;
   left: 0px;
@@ -197,7 +204,9 @@ section {
   padding-bottom: 6px;
 }
 
+/**********/
 /* MOBILE */
+/**********/
 .mobile {
   display: none;
 }
@@ -224,6 +233,8 @@ section {
     display: flex;
     flex-direction: column;
     width: 100%;
+    -moz-box-shadow: var(--bs-sm);
+    -webkit-box-shadow: var(--bs-sm);
     box-shadow: var(--bs-sm);
   }
 
