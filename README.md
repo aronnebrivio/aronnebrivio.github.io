@@ -3,6 +3,7 @@ Personal frontpage • 👉 [aronnebrivio.dev](https://aronnebrivio.dev)
 
 ![](https://github.com/aronnebrivio/aronnebrivio.github.io/workflows/Publish%20on%20Github%20Pages/badge.svg?branch=production)
 [![Dependency status](https://david-dm.org/aronnebrivio/aronnebrivio.github.io.svg)](https://david-dm.org/aronnebrivio/aronnebrivio.github.io)
+[![Renovate](https://img.shields.io/badge/renovate-enabled-brightgreen.svg)](https://renovatebot.com)
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Faronnebrivio%2Faronnebrivio.github.io.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Faronnebrivio%2Faronnebrivio.github.io?ref=badge_shield)
 [![LICENSE](https://img.shields.io/badge/license-MIT-gold.svg)](https://github.com/aronnebrivio/aronnebrivio.github.io/blob/master/LICENSE)
 
