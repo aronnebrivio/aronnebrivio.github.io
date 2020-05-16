@@ -40,7 +40,10 @@
 
 <body id="body">
   <!-- NAVBAR -->
-  <div class="nav-container">
+  <div
+          class="nav-container"
+          id="main-header"
+  >
     <div
             class="mobile"
             id="mobile-nav-content"
@@ -53,32 +56,36 @@
     </div>
     <nav>
       <ul id="top-menu">
-        <li>
+        <li class="active">
           <a
                   class="nav-item"
                   id="nav-home"
-                  onclick="navigateTo('home')"
+                  href="#home"
+                  onclick="return navigateTo('home')"
           >~/aronne</a>
         </li>
         <li>
           <a
                   class="nav-item"
                   id="nav-projects"
-                  onclick="navigateTo('projects')"
+                  href="#projects"
+                  onclick="return navigateTo('projects')"
           >projects</a>
         </li>
         <li>
           <a
                   class="nav-item"
                   id="nav-experience"
-                  onclick="navigateTo('experience')"
+                  href="#experience"
+                  onclick="return navigateTo('experience')"
           >experience</a>
         </li>
         <li>
           <a
                   class="nav-item"
                   id="nav-education"
-                  onclick="navigateTo('education')"
+                  href="#education"
+                  onclick="return navigateTo('education')"
           >education</a>
         </li>
         <li class="mobile">- - -</li>
@@ -430,6 +437,7 @@
           crossorigin="anonymous"
   ></script>
   <script src="scripts/zenscroll-min.js"></script>
+  <script src="scripts/menuspy.min.js"></script>
   <script src="index.js"></script>
 </body>
 

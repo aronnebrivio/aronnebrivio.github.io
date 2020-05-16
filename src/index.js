@@ -49,13 +49,12 @@ function navigateTo(id) {
     item.className = item.className.replace(/\bactive\b/, '')
   })
 
-  var currentNavElement = document.getElementById('nav-' + id)
-  currentNavElement.className += ' active'
-
   var menu = document.getElementById('top-menu')
   if (hasClass(menu, 'opened')) {
     toggleMobileMenu()
   }
+
+  return false
 }
 
 function setToggleThemeTitle(theme) {
@@ -88,3 +87,12 @@ document.getElementById('body').className = theme
 setToggleThemeTitle(theme)
 
 navigateTo('home')
+
+var mainHeader = document.getElementById('main-header');
+new MenuSpy(mainHeader, {
+  menuItemSelector: 'a[href^="#"]',
+  activeClass: 'active',
+  threshold: 10,
+  enableLocationHash: false,
+  callback: null
+});
