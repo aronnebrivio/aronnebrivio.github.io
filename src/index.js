@@ -88,12 +88,11 @@ setToggleThemeTitle(theme)
 
 navigateTo('home')
 
-var elm = document.querySelector('#main-header');
-var ms = new MenuSpy(elm, {
+var mainHeader = document.getElementById('main-header');
+new MenuSpy(mainHeader, {
   menuItemSelector: 'a[href^="#"]',
   activeClass: 'active',
-  threshold: 15,
-  enableLocationHash: true,
-  hashTimeout: 600,
+  threshold: 10,
+  enableLocationHash: false,
   callback: null
 });
