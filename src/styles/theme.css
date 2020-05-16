@@ -194,7 +194,7 @@ section {
   text-decoration: none;
 }
 
-.nav-container > nav > ul > li > a.active {
+.nav-container > nav > ul > li.active > a {
   border-bottom: solid 2px var(--black-500) !important;
   padding-bottom: 6px;
 }
