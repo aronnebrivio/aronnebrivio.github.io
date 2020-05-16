@@ -56,6 +56,8 @@ function navigateTo(id) {
   if (hasClass(menu, 'opened')) {
     toggleMobileMenu()
   }
+
+  return false
 }
 
 function setToggleThemeTitle(theme) {
