@@ -88,3 +88,13 @@ document.getElementById('body').className = theme
 setToggleThemeTitle(theme)
 
 navigateTo('home')
+
+var elm = document.querySelector('#main-header');
+var ms = new MenuSpy(elm, {
+  menuItemSelector: 'a[href^="#"]',
+  activeClass: 'active',
+  threshold: 15,
+  enableLocationHash: true,
+  hashTimeout: 600,
+  callback: null
+});

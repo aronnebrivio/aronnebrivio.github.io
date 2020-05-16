@@ -40,7 +40,10 @@
 
 <body id="body">
   <!-- NAVBAR -->
-  <div class="nav-container">
+  <div
+          class="nav-container"
+          id="main-header"
+  >
     <div
             class="mobile"
             id="mobile-nav-content"
@@ -57,6 +60,7 @@
           <a
                   class="nav-item"
                   id="nav-home"
+                  href="#home"
                   onclick="navigateTo('home')"
           >~/aronne</a>
         </li>
@@ -64,6 +68,7 @@
           <a
                   class="nav-item"
                   id="nav-projects"
+                  href="#projects"
                   onclick="navigateTo('projects')"
           >projects</a>
         </li>
@@ -71,6 +76,7 @@
           <a
                   class="nav-item"
                   id="nav-experience"
+                  href="#experience"
                   onclick="navigateTo('experience')"
           >experience</a>
         </li>
@@ -78,6 +84,7 @@
           <a
                   class="nav-item"
                   id="nav-education"
+                  href="#education"
                   onclick="navigateTo('education')"
           >education</a>
         </li>
@@ -430,6 +437,7 @@
           crossorigin="anonymous"
   ></script>
   <script src="scripts/zenscroll-min.js"></script>
+  <script src="scripts/menuspy.min.js"></script>
   <script src="index.js"></script>
 </body>
 
