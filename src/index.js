@@ -49,9 +49,6 @@ function navigateTo(id) {
     item.className = item.className.replace(/\bactive\b/, '')
   })
 
-  var currentNavElement = document.getElementById('nav-' + id)
-  currentNavElement.className += ' active'
-
   var menu = document.getElementById('top-menu')
   if (hasClass(menu, 'opened')) {
     toggleMobileMenu()
