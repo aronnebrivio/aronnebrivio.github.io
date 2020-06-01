@@ -13,12 +13,16 @@ function setCookie(name, value, daysToLive) {
 }
 
 function getCookie(name) {
-  var i, x, y, cookies = document.cookie.split(';')
+  var i
+  var x
+  var y
+  var cookies = document.cookie.split(';')
+
   for (i = 0; i < cookies.length; i++) {
     x = cookies[i].substr(0, cookies[i].indexOf('='))
     y = cookies[i].substr(cookies[i].indexOf('=') + 1)
     x = x.replace(/^\s+|\s+$/g, '')
-    if (x == name) {
+    if (x === name) {
       return unescape(y)
     }
   }
@@ -44,8 +48,8 @@ function navigateTo(id) {
   var element = document.getElementById(id)
   zenscroll.to(element)
 
-  var navItems = document.querySelectorAll('.nav-item');
-  [].forEach.call(navItems, function(item) {
+  var navItems = document.querySelectorAll('.nav-item')
+  Array.prototype.forEach.call(navItems, function(item) {
     item.className = item.className.replace(/\bactive\b/, '')
   })
 
@@ -59,7 +63,7 @@ function navigateTo(id) {
 
 function setToggleThemeTitle(theme) {
   var title = '"Alexa, turn the lights '
-  title += theme == THEME_DARK ? 'on"' : 'off"'
+  title += theme === THEME_DARK ? 'on"' : 'off"'
 
   var toggle = document.getElementById('theme-toggle')
   var mobileToggle = document.getElementById('mobile-theme-toggle')
@@ -88,11 +92,11 @@ setToggleThemeTitle(theme)
 
 navigateTo('home')
 
-var mainHeader = document.getElementById('main-header');
+var mainHeader = document.getElementById('main-header')
 new MenuSpy(mainHeader, {
   menuItemSelector: 'a[href^="#"]',
   activeClass: 'active',
   threshold: 10,
   enableLocationHash: false,
   callback: null
-});
+})

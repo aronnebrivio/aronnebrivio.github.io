@@ -1,9 +1,9 @@
-name: Publish on Github Pages
+name: Publish beta on Surge
 
 on:
   push:
     branches:
-      - production
+      - develop
 
 jobs:
   build-and-deploy:
@@ -17,12 +17,8 @@ jobs:
       - name: Install and Build 🔧
         run: |
           npm install
+          npm install surge
           npm run build
 
       - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@releases/v3
-        with:
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          BRANCH: master
-          FOLDER: dist
-          CLEAN: true
+        run: ./node_modules/.bin/surge -p dist --domain ${{ secrets.SURGE_DOMAIN }} --token ${{ secrets.SURGE_TOKEN }}
