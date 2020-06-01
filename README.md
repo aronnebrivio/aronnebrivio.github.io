@@ -2,6 +2,7 @@
 Personal frontpage • 👉 [aronnebrivio.dev](https://aronnebrivio.dev)
 
 ![](https://github.com/aronnebrivio/aronnebrivio.github.io/workflows/Publish%20on%20Github%20Pages/badge.svg?branch=production)
+![](https://github.com/aronnebrivio/aronnebrivio.github.io/workflows/Publish%20beta%20on%20Surge/badge.svg?branch=develop)
 [![Dependency status](https://david-dm.org/aronnebrivio/aronnebrivio.github.io.svg)](https://david-dm.org/aronnebrivio/aronnebrivio.github.io)
 [![Renovate](https://img.shields.io/badge/renovate-enabled-brightgreen.svg)](https://renovatebot.com)
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Faronnebrivio%2Faronnebrivio.github.io.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Faronnebrivio%2Faronnebrivio.github.io?ref=badge_shield)
@@ -21,7 +22,7 @@ npm run build
 
 This will create a new `dist` folder.
 
-To automate the GitHub Page deploy I'm using [JamesIves/github-pages-deploy-action](https://github.com/JamesIves/github-pages-deploy-action) in my [GitHub workflow](https://github.com/aronnebrivio/aronnebrivio.github.io/blob/production/.github/workflows/ci.yml).
+To automate the GitHub Page deploy I'm using [JamesIves/github-pages-deploy-action](https://github.com/JamesIves/github-pages-deploy-action) in my [GitHub workflow](https://github.com/aronnebrivio/aronnebrivio.github.io/blob/production/.github/workflows/prod.yml) for the *production* environment and [surge](https://surge.sh/) for the *develop* one (betas are published at [beta.aronnebrivio.surge.sh](http://beta.aronnebrivio.surge.sh)).
 
 ## License
 Copyright (c) 2020 Aronne Brivio. Released under the MIT License. See [LICENSE](https://github.com/aronnebrivio/aronnebrivio.github.io/blob/master/LICENSE) for details.
