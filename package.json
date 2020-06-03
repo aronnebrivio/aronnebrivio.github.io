@@ -1,10 +1,11 @@
 {
   "name": "aronnebrivio.github.io",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Personal frontpage",
   "main": "src/index.html",
   "scripts": {
-    "build": "./build.sh"
+    "build": "./build.sh",
+    "serve": "./node_modules/.bin/serve src"
   },
   "repository": {
     "type": "git",
@@ -21,5 +22,8 @@
     "cssnano-cli": "^1.0.5",
     "html-minifier": "^4.0.0",
     "uglify-js": "^3.9.2"
+  },
+  "devDependencies": {
+    "serve": "^11.3.1"
   }
 }

@@ -34,6 +34,7 @@ function toggleTheme() {
   body.className = theme
   setCookie('theme', theme, 999999)
   setToggleThemeTitle(theme)
+  setMetaColor(theme)
 }
 
 function hasClass(element, className) {
@@ -84,10 +85,16 @@ function toggleMobileMenu() {
   }
 }
 
+function setMetaColor(theme) {
+  var color = theme === THEME_DARK ? '#2d2d2d' : '#ffffff'
+  document.querySelector('meta[name="theme-color"]').setAttribute('content', color);
+}
+
 /* MAIN */
 var theme = getCookie('theme')
 theme = isThemeValid(theme) ? theme : THEME_DARK
 document.getElementById('body').className = theme
+setMetaColor(theme)
 setToggleThemeTitle(theme)
 
 navigateTo('home')
@@ -100,3 +107,9 @@ new MenuSpy(mainHeader, {
   enableLocationHash: false,
   callback: null
 })
+
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('/service-worker.js')
+  })
+}
