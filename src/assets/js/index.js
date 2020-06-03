@@ -88,7 +88,6 @@ function toggleMobileMenu() {
 function setMetaColor(theme) {
   var color = theme === THEME_DARK ? '#2d2d2d' : '#ffffff'
   document.querySelector('meta[name="theme-color"]').setAttribute('content', color);
-  document.querySelector('meta[name="background-color"]').setAttribute('content', color);
 }
 
 /* MAIN */
