@@ -110,5 +110,7 @@ new MenuSpy(mainHeader, {
 })
 
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('libs/sw.js')
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('/service-worker.js')
+  })
 }
