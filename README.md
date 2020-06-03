@@ -24,6 +24,14 @@ This will create a new `dist` folder.
 
 To automate the GitHub Page deploy I'm using [JamesIves/github-pages-deploy-action](https://github.com/JamesIves/github-pages-deploy-action) in my [GitHub workflow](https://github.com/aronnebrivio/aronnebrivio.github.io/blob/production/.github/workflows/prod.yml) for the *production* environment and [surge](https://surge.sh/) for the *develop* one (betas are published at [beta.aronnebrivio.surge.sh](http://beta.aronnebrivio.surge.sh)).
 
+## Run locally
+```bash
+npm install
+npm run serve
+```
+
+This will serve the `src` folder at `localhost:5000`.
+
 ## License
 Copyright (c) 2020 Aronne Brivio. Released under the MIT License. See [LICENSE](https://github.com/aronnebrivio/aronnebrivio.github.io/blob/master/LICENSE) for details.
 
