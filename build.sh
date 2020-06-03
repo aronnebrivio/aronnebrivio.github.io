@@ -9,7 +9,7 @@ SCRIPTS_FOLDER="$ASSETS_FOLDER/js"
 STYLES_FOLDER="$ASSETS_FOLDER/css"
 IMAGES_FOLDER="$ASSETS_FOLDER/images"
 MANIFEST="manifest.json"
-SERVICE_WORKER="service-worker.json"
+SERVICE_WORKER="service-worker.js"
 NOJEKYLL=".nojekyll"
 CNAME="CNAME"
 
