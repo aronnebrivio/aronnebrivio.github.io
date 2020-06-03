@@ -4,21 +4,6 @@ var THEMES = [
   THEME_LIGHT,
   THEME_DARK,
 ]
-var MANIFEST = {
-  "name": "Aronne Brivio",
-  "short_name": "~/aronnebrivio",
-  "description": "Aronne Brivio front page and resume. Projects, experience and education.",
-  "start_url": "index.html",
-  "background_color": "#000000",
-  "theme_color": "#000000",
-  "display": "standalone",
-  "orientation": "portrait",
-  "icons": [{
-    "src": "assets/images/logo-512x512.png",
-    "type": "image/png",
-    "sizes": "512x512"
-  }]
-}
 
 function setCookie(name, value, daysToLive) {
   var expirationDate = new Date()
@@ -49,7 +34,7 @@ function toggleTheme() {
   body.className = theme
   setCookie('theme', theme, 999999)
   setToggleThemeTitle(theme)
-  setManifest(theme)
+  setMetaColor(theme)
 }
 
 function hasClass(element, className) {
@@ -100,28 +85,17 @@ function toggleMobileMenu() {
   }
 }
 
-function setManifest(theme) {
-  if (theme === THEME_LIGHT) {
-    MANIFEST.theme_color = '#ffffff'
-    MANIFEST.background_color = '#ffffff'
-  } else {
-    MANIFEST.theme_color = '#2d2d2d'
-    MANIFEST.background_color = '#2d2d2d'
-  }
-
-  var stringManifest = JSON.stringify(MANIFEST);
-  var blob = new Blob([stringManifest], {
-    type: 'application/json'
-  });
-  var manifestURL = URL.createObjectURL(blob);
-  document.querySelector('#manifest-placeholder').setAttribute('href', manifestURL);
+function setMetaColor(theme) {
+  var color = theme === THEME_DARK ? '#2d2d2d' : '#ffffff'
+  document.querySelector('meta[name="theme-color"]').setAttribute('content', color);
+  document.querySelector('meta[name="background-color"]').setAttribute('content', color);
 }
 
 /* MAIN */
 var theme = getCookie('theme')
 theme = isThemeValid(theme) ? theme : THEME_DARK
 document.getElementById('body').className = theme
-setManifest(theme)
+setMetaColor(theme)
 setToggleThemeTitle(theme)
 
 navigateTo('home')

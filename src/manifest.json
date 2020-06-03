@@ -1,0 +1,13 @@
+{
+  "name": "Aronne Brivio",
+  "short_name": "~/aronnebrivio",
+  "description": "Aronne Brivio front page and resume. Projects, experience and education.",
+  "start_url": "index.html",
+  "display": "standalone",
+  "orientation": "portrait",
+  "icons": [{
+    "src": "assets/images/logo-512x512.png",
+    "type": "image/png",
+    "sizes": "512x512"
+  }]
+}
