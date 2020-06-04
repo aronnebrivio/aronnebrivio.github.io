@@ -1,11 +1,12 @@
 {
   "name": "aronnebrivio.github.io",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Personal frontpage",
   "main": "src/index.html",
   "scripts": {
     "build": "./build.sh",
-    "serve": "./node_modules/.bin/serve src"
+    "serve": "./node_modules/.bin/serve src",
+    "serve-as-prod": "./build.sh && ./node_modules/.bin/serve dist"
   },
   "repository": {
     "type": "git",

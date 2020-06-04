@@ -30,7 +30,9 @@ npm install
 npm run serve
 ```
 
-This will serve the `src` folder at `localhost:5000`.
+This will serve the `src` folder at `localhost:XXXX` (default port is `5000`).
+
+*ProTip: you can serve the `dist` folder using `npm run serve-as-prod` command.*
 
 ## License
 Copyright (c) 2020 Aronne Brivio. Released under the MIT License. See [LICENSE](https://github.com/aronnebrivio/aronnebrivio.github.io/blob/master/LICENSE) for details.
