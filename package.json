@@ -22,7 +22,7 @@
     "cssnano": "^4.1.11",
     "cssnano-cli": "^1.0.5",
     "html-minifier": "^4.0.0",
-    "uglify-js": "^3.13.3"
+    "uglify-js": "^3.13.4"
   },
   "devDependencies": {
     "serve": "11.3.2"
