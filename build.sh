@@ -26,7 +26,7 @@ echo "Building..."
 # Minify CSS files
 for file in $(ls $SRC_FOLDER/$STYLES_FOLDER)
 do
-    ./node_modules/.bin/cssnano --no-discardUnused $SRC_FOLDER/$STYLES_FOLDER/$file $DIST_FOLDER/$STYLES_FOLDER/$file
+    npx postcss $SRC_FOLDER/$STYLES_FOLDER/$file > $DIST_FOLDER/$STYLES_FOLDER/$file
 done
 
 # Minify JS files (excluded libs folder)
