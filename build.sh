@@ -13,6 +13,13 @@ SERVICE_WORKER="service-worker.js"
 NOJEKYLL=".nojekyll"
 CNAME="CNAME"
 
+VERSION=$(cat package.json \
+  | grep version \
+  | head -1 \
+  | awk -F: '{ print $2 }' \
+  | sed 's/[",]//g' \
+  | tr -d '[[:space:]]')
+
 echo "Cleaning up..."
 rm -rf $DIST_FOLDER/
 mkdir -p $DIST_FOLDER/$SCRIPTS_FOLDER
@@ -47,5 +54,8 @@ cp $SRC_FOLDER/$MANIFEST $DIST_FOLDER/$MANIFEST
 cp $SRC_FOLDER/$SERVICE_WORKER $DIST_FOLDER/$SERVICE_WORKER
 cp $NOJEKYLL $DIST_FOLDER/$NOJEKYLL
 cp $CNAME $DIST_FOLDER/$CNAME
+
+# Bump service worker version
+sed -i.bak "s/VERSION/$VERSION/g" $DIST_FOLDER/$SERVICE_WORKER && rm $DIST_FOLDER/$SERVICE_WORKER.bak
 
 echo "Build complete!"
