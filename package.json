@@ -22,7 +22,7 @@
     "cssnano": "^5.0.8",
     "html-minifier": "^4.0.0",
     "postcss": "^8.3.8",
-    "postcss-cli": "^8.3.1",
+    "postcss-cli": "^9.0.1",
     "serve": "12.0.1",
     "uglify-js": "^3.14.2"
   }
