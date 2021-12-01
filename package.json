@@ -24,6 +24,6 @@
     "postcss": "^8.4.1",
     "postcss-cli": "^9.0.2",
     "serve": "^13.0.2",
-    "uglify-js": "^3.14.3"
+    "uglify-js": "^3.14.4"
   }
 }
