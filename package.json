@@ -19,7 +19,7 @@
   },
   "homepage": "https://aronnebrivio.dev",
   "devDependencies": {
-    "cssnano": "^5.0.13",
+    "cssnano": "^5.0.14",
     "html-minifier": "^4.0.0",
     "postcss": "^8.4.5",
     "postcss-cli": "^9.1.0",
