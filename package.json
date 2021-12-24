@@ -19,11 +19,11 @@
   },
   "homepage": "https://aronnebrivio.dev",
   "devDependencies": {
-    "cssnano": "^5.0.12",
+    "cssnano": "^5.0.14",
     "html-minifier": "^4.0.0",
-    "postcss": "^8.4.4",
-    "postcss-cli": "^9.0.2",
+    "postcss": "^8.4.5",
+    "postcss-cli": "^9.1.0",
     "serve": "^13.0.2",
-    "uglify-js": "^3.14.4"
+    "uglify-js": "^3.14.5"
   }
 }
