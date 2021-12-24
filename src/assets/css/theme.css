@@ -151,6 +151,23 @@ section {
   margin-top: 0px;
 }
 
+.education .card.certification {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.education .card.certification .description {
+  text-align: center !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.education .card.certification h4 {
+  margin-bottom: 0px;
+}
+
 #screen-dimmer {
   display: none;
 }
