@@ -1,0 +1,10 @@
+tasks:
+  - name: Start
+    init: npm install
+    command: npm run serve
+ports:
+  - port: 3000
+    visibility: private
+    onOpen: open-browser
+
+
