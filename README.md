@@ -35,9 +35,9 @@ This will serve the `src` folder at `localhost:XXXX` (default port is `3000`).
 *ProTip: you can serve the `dist` folder using `npm run serve-as-prod` command.*
 
 ## Run on Gitpod
-Just navigate to `gitpod.io/#https://github.com/aronnebrivio/aronnebrivio.github.io`
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/aronnebrivio/aronnebrivio.github.io)
 
-*Ref: [Gitpod.io](https://gitpod.io)
+*Ref: [Gitpod.io](https://gitpod.io)*
 
 ## License
 Copyright (c) 2020-2022 Aronne Brivio. Released under the MIT License. See [LICENSE](https://github.com/aronnebrivio/aronnebrivio.github.io/blob/master/LICENSE) for details.
