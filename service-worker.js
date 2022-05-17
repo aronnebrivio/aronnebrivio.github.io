@@ -1,4 +1,4 @@
-var DYNAMIC_CACHE_NAME = 'cache-v1.4.3'
+var DYNAMIC_CACHE_NAME = 'cache-v1.4.4'
 
 // activate event
 self.addEventListener('activate', evt => {
