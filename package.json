@@ -23,7 +23,7 @@
     "html-minifier": "^4.0.0",
     "postcss": "^8.4.28",
     "postcss-cli": "^10.1.0",
-    "serve": "^14.2.0",
+    "serve": "^14.2.1",
     "uglify-js": "^3.17.4"
   }
 }
