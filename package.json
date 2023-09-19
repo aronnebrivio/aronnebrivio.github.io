@@ -21,7 +21,7 @@
   "devDependencies": {
     "cssnano": "^6.0.1",
     "html-minifier": "^4.0.0",
-    "postcss": "^8.4.29",
+    "postcss": "^8.4.30",
     "postcss-cli": "^10.1.0",
     "serve": "^14.2.1",
     "uglify-js": "^3.17.4"
