@@ -38,7 +38,7 @@ This will serve the `src` folder at `localhost:XXXX` (default port is `3000`).
 *Ref: [Gitpod.io](https://gitpod.io)*
 
 ## License
-Copyright (c) 2020-2024 Aronne Brivio. Released under the MIT License. See [LICENSE](https://github.com/aronnebrivio/aronnebrivio.github.io/blob/master/LICENSE) for details.
+Copyright (c) 2020-2026 Aronne Brivio. Released under the MIT License. See [LICENSE](https://github.com/aronnebrivio/aronnebrivio.github.io/blob/production/LICENSE) for details.
 
 
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Faronnebrivio%2Faronnebrivio.github.io.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Faronnebrivio%2Faronnebrivio.github.io?ref=badge_large)
